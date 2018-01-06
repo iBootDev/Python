@@ -4,11 +4,11 @@ import hashlib
 
 print("Simple pass encrypt. Twitter: @ibootdev")
 time.sleep(1)
-option = int(input('''Choose your option:
+option = int(eval(input('''Choose your option:
 -------------------
 |Simple text crypt |
 |Made By @ibootdev |
-| V 0.5            |
+| V 0.7            |
 | 1 : md5          |
 | 2: Sha256        |
 | 3: Sha512        |
@@ -18,9 +18,9 @@ option = int(input('''Choose your option:
 | Hit CTR+C to stop|
 --------------------
 
-'''))
+''')))
 time.sleep(1)
-string = raw_input('String to crypt\n')
+string = input('String to crypt\n').encode('utf-8')
 if option == 1:
     text = hashlib.md5(string).hexdigest()
 elif option == 2:
@@ -33,4 +33,4 @@ elif option == 5:
     text = hashlib.sha224(string).hexdigest()
 elif option == 6:
     text = hashlib.sha384(string).hexdigest()
-print("The text is: ", text)
+print(("The text is: ", text))
