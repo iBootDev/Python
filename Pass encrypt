@@ -1,17 +1,27 @@
-from __future__ import absolute_import
-from __future__ import print_function
-import crypt
 import time
 from six.moves import input
+import hashlib
 
 print("Simple pass encrypt. Twitter: @ibootdev")
 time.sleep(1)
-print("$1 = MD5; $5 = Sha256; $6 = Sha512")
+option = int(input('''Choose your option:
+-------------------
+|Simple text crypt |
+|Made By @ibootdev |
+| V 0.1            |
+| 1 : md5          |
+| 2: Sha256        |
+| 3: Sha512        |
+| Hit CTR+C to stop|
+--------------------
+
+'''))
 time.sleep(1)
-def gerar_passwd():
-    my_pass = input ('Type your pass: ')
-    time.sleep(1)
-    pass_generated = crypt.crypt(my_pass, "$6$SalG4ndo$")#Encrypt the pass, change the number of the first "$" for MD5; Sha256; Sha512
-    print("Your pass is: ", pass_generated)
-if __name__ == '__main__':
-    print((gerar_passwd()))
+val = raw_input('String to crypt\n')
+if option == 1:
+    text = hashlib.md5(val).hexdigest()
+elif option == 2:
+    text = hashlib.sha256(val).hexdigest()
+elif option == 3:
+    text = hashlib.sha512(val).hexdigest()
+print(text)
