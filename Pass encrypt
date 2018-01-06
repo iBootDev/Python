@@ -24,4 +24,4 @@ elif option == 2:
     text = hashlib.sha256(val).hexdigest()
 elif option == 3:
     text = hashlib.sha512(val).hexdigest()
-print(text)
+print("The text is: ", text)
