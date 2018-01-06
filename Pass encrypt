@@ -2,35 +2,38 @@ import time
 from six.moves import input
 import hashlib
 
-print("Simple pass encrypt. Twitter: @ibootdev")
+print("Simple text encrypt. Twitter: @ibootdev")
 time.sleep(1)
-option = int(eval(input('''Choose your option:
--------------------
-|Simple text crypt |
-|Made By @ibootdev |
-| V 0.7            |
-| 1 : md5          |
-| 2: Sha256        |
-| 3: Sha512        |
-| 4: Sha1          |
-| 5: Sha224        |
-| 6: Sha384        |
-| Hit CTR+C to stop|
---------------------
+while True:#While to return to menu when encrypt the text
+    option = int(eval(input('''Choose your option:
+    -------------------
+    |Simple text crypt |
+    |Made By @ibootdev |
+    | V 0.8            |
+    | 1 : md5          |
+    | 2: Sha256        |
+    | 3: Sha512        |
+    | 4: Sha1          |
+    | 5: Sha224        |
+    | 6: Sha384        |
+    | Hit CTR+C to stop|
+    --------------------
 
-''')))
-time.sleep(1)
-string = input('String to crypt\n').encode('utf-8')
-if option == 1:
-    text = hashlib.md5(string).hexdigest()
-elif option == 2:
-    text = hashlib.sha256(string).hexdigest()
-elif option == 3:
-    text = hashlib.sha512(string).hexdigest()
-elif option == 4:
-    text = hashlib.sha1(string).hexdigest()
-elif option == 5:
-    text = hashlib.sha224(string).hexdigest()
-elif option == 6:
-    text = hashlib.sha384(string).hexdigest()
-print(("The text is: ", text))
+    ''')))
+    time.sleep(1)
+    string = input('String to crypt\n').encode('utf-8')#Define string and encode with utf-8
+    if option == 1:
+        text = hashlib.md5(string).hexdigest()
+    elif option == 2:
+        text = hashlib.sha256(string).hexdigest()
+    elif option == 3:
+        text = hashlib.sha512(string).hexdigest()
+    elif option == 4:
+        text = hashlib.sha1(string).hexdigest()
+    elif option == 5:
+        text = hashlib.sha224(string).hexdigest()
+    elif option == 6:
+        text = hashlib.sha384(string).hexdigest()
+    print(option)#Return to Menu after encrypt
+    print(("The text is: ", text))
+
