@@ -8,20 +8,29 @@ option = int(input('''Choose your option:
 -------------------
 |Simple text crypt |
 |Made By @ibootdev |
-| V 0.1            |
+| V 0.5            |
 | 1 : md5          |
 | 2: Sha256        |
 | 3: Sha512        |
+| 4: Sha1          |
+| 5: Sha224        |
+| 6: Sha384        |
 | Hit CTR+C to stop|
 --------------------
 
 '''))
 time.sleep(1)
-val = raw_input('String to crypt\n')
+string = raw_input('String to crypt\n')
 if option == 1:
-    text = hashlib.md5(val).hexdigest()
+    text = hashlib.md5(string).hexdigest()
 elif option == 2:
-    text = hashlib.sha256(val).hexdigest()
+    text = hashlib.sha256(string).hexdigest()
 elif option == 3:
-    text = hashlib.sha512(val).hexdigest()
+    text = hashlib.sha512(string).hexdigest()
+elif option == 4:
+    text = hashlib.sha1(string).hexdigest
+elif option == 5:
+    text = hashlib.sha224(string).hexdigest
+elif option == 6:
+    text = hashlib.sha384(string).hexdigest
 print("The text is: ", text)
