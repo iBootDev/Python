@@ -28,9 +28,9 @@ elif option == 2:
 elif option == 3:
     text = hashlib.sha512(string).hexdigest()
 elif option == 4:
-    text = hashlib.sha1(string).hexdigest
+    text = hashlib.sha1(string).hexdigest()
 elif option == 5:
-    text = hashlib.sha224(string).hexdigest
+    text = hashlib.sha224(string).hexdigest()
 elif option == 6:
-    text = hashlib.sha384(string).hexdigest
+    text = hashlib.sha384(string).hexdigest()
 print("The text is: ", text)
