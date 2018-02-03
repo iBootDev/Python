@@ -30,7 +30,7 @@ while True:
     " Bip Bip BiiiPP wow i found a bug #PyBot. hour: ",
     " Hello <3 #PyBot. hour: ",
     " 100111000101010 ignore those numbers #PyBot. hour: ",
-    " i have 153 lines of code #PyBot. hour: ",
+    " i have 58 lines of code #PyBot. hour: ",
     " AAAAAA, i don't love anyone #PyBot. hour: ",
     " I LOVE MY DEV #PyBot. hour: ",
     " One day, i'll dominate the world! #PyBot. hour: ",
