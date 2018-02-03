@@ -8,10 +8,10 @@ import datetime
 #CODED BY iBootDev. Twitter: @ibootdev Bot twitter: @iBoot_Bot
 #enter the corresponding information from your Twitter application:
 now = datetime.datetime.now()
-CONSUMER_KEY = 'rbzN3vRjr7j9Wi9PSAUia1uJS'#keep the quotes, replace this with your consumer key
-CONSUMER_SECRET = 'Za9w4lpGdr3TUrLsHUXiE3iVMvclRB9CvwfAbVUUVPj5lphGGl'#keep the quotes, replace this with your consumer secret key
-ACCESS_KEY = '959572371425329152-dWGioIiv55RGr6vQcf3EEq9WIb9y900'#keep the quotes, replace this with your access token
-ACCESS_SECRET = '2Swzj2uqOt6SaOa8WLTUK8f9CvHIUOWFH268v7d6hkR4v'#keep the quotes, replace this with your access token secret
+CONSUMER_KEY = ''#keep the quotes, replace this with your consumer key
+CONSUMER_SECRET = ''#keep the quotes, replace this with your consumer secret key
+ACCESS_KEY = ''#keep the quotes, replace this with your access token
+ACCESS_SECRET = ''#keep the quotes, replace this with your access token secret
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
