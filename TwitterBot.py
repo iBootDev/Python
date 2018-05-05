@@ -60,5 +60,5 @@ while True:
     message = random.choice(messages) + str(now.isoformat())
     twitter.update_status(status = message)
     joke = pyjokes.get_joke() + str(now.isoformat())
-    twitter.update_status(status = joke) + str(now.isoformat())
+    twitter.update_status(status = joke)
     time.sleep(900)#Tweet every 15 minutes
